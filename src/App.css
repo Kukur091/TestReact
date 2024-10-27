@@ -1,0 +1,197 @@
+.App {
+  text-align: center;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 5%;
+  background-color: none;
+  z-index: 1000;
+}
+
+.divider{
+  display: block;
+  position: fixed;
+  top: 4%;
+  scale: 300%;
+  z-index: 998;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: auto;
+  background: none;
+  border: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes pulssse{
+    0%{
+      transform: scale(1.05);
+    }
+    100%{
+      transform: scale(1);
+      transform: rotate(1deg);
+    }
+  }
+
+  @keyframes pulsse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+      transform: rotate(-3deg);
+      
+    }
+  }
+  @keyframes pls {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  @keyframes ple {
+    0%{
+      transform: scale(1.05);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  .App-logo {
+    animation: pulssse;
+    animation-duration: 0.5s;
+
+  }
+
+
+  @keyframes pps {
+    0%{
+      transform: scale(1) translate(0%,0%);
+    }
+    100%{
+      transform: scale(4) translate(0%,40%);
+    }
+    
+  }
+
+  @keyframes ppss {
+    0%{
+      transform: scale(4) translate(0%,40%);
+    }
+    100%{
+      transform: scale(1) translate(0%,0%);
+    }
+  }
+
+
+
+  
+  .App-logo:hover {
+      animation: pulsse 0.5s forwards;
+  }
+  
+}
+
+
+@keyframes dd{
+  0%{
+    opacity: 1;
+    transform: scaleY(3);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100%{
+    opacity: 1;
+    transform: scaleY(1);
+    transform: scaleX(1);
+    transform-origin: left;
+  } 
+}
+.d10{
+  opacity: 0;
+  position:fixed;
+  pointer-events:all;
+  transform: scale(1);
+  top: 2.25%;
+  right: 6.75%;
+  z-index:1010
+}
+
+
+
+
+
+.dR4{
+  pointer-events: auto;
+  border: none;
+  background: none;
+  animation: ple;
+  animation-duration: 0.5s;
+  animation: ppss 0.5s forwards;
+}
+
+.dR4:hover {
+  animation: pls 0.5s forwards;
+  animation: pps 1s forwards;
+}
+
+.dR3{
+  pointer-events: auto;
+  border: none;
+  background: none;
+  animation: ple;
+  animation-duration: 0.5s;
+  animation: ppss 0.5s forwards;
+}
+
+.dR3:hover {
+  animation: pls 0.5s forwards;
+  animation: pps 1s forwards;
+}
+
+.dR2{
+  opacity: 1;
+  pointer-events: all;
+  scale: 140%;
+  border: none;
+  background: none;
+  animation: ple;
+  animation-duration: 0.5s;
+}
+
+.dR2:hover {
+  visibility: hidden;
+}
+
+.dR2:hover .d10{
+  visibility: visible;
+  animation: dd 0.5s forwards;
+}
+
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #1e1e1e;
+}
+
+
