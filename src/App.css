@@ -1,0 +1,188 @@
+@keyframes animbutton{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+@keyframes cancelbutton{
+  0%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes btn3{
+  0%{
+    transform: scaleX(1);
+  }
+  100%{
+    transform: scaleX(1.1);  
+    transform-origin: right; 
+  }
+}
+
+@keyframes cbtn3{
+  0%{
+    transform: scaleX(1.1);
+  }
+  100%{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.logo{
+  pointer-events: auto;
+  position: absolute;
+  top: .2%;
+  left: 5%;
+  scale: 50%;
+}
+.App {
+  text-align: center;
+}
+
+.backg{
+  pointer-events: auto;
+  position: absolute;
+  top: 0%;
+  transition: filter 0.3s ease;
+  overflow: hidden;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(255, 105, 220, 0), transparent 100px);
+}
+
+.backg::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(255, 105, 220, 0), transparent 100px);
+  pointer-events: none;
+  transition: background 0.2s ease;
+}
+
+
+.backg:hover::before {
+  background: radial-gradient(circle at var(--x) var(--y), rgba(255, 105, 220, 0.3), transparent 100px);
+}
+
+
+
+.backb {
+  pointer-events: none;
+  position: fixed; /* Fixe le footer en bas de l'écran */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.backbb {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px; /* Ajustez la hauteur maximale selon vos besoins */
+  display: block;
+}
+
+
+
+
+
+.Button1{
+  pointer-events: auto;
+  position: absolute;
+  background: none;
+  border: none;
+  left: 38%;
+  bottom: 8%;
+  animation: cancelbutton 1s forwards;
+}
+
+.Button1:hover{
+  animation: animbutton .7s forwards;
+}
+
+.Button2{
+  pointer-events: auto;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 38%;
+  bottom: 8%;
+  animation: cancelbutton .7s forwards;
+}
+
+.Button2:hover{
+  animation: animbutton .7s forwards;
+}
+
+.btn{
+  pointer-events: auto;
+  position: absolute;
+  background: none;
+  border: none;
+  top: 1.75%;
+  right: 18%;
+  scale: 70%;
+  animation: cbtn3 1s forwards;
+}
+
+.btn:hover{
+  animation: btn3 1s forwards;
+}
+
+.txt{
+  z-index: 100;
+  transform: translateY(-85%);
+}
+
+.body{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.line{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lin{
+  position: absolute;
+  top: 10%;
+  transform: scaleX(200%);
+
+}
+
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #1e1e1e;
+}
+
+
