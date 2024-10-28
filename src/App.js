@@ -1,40 +1,46 @@
 import logo from './logo.svg';
-import d4 from './d4.svg'
-import d5 from './d5.svg'
-import d6 from './d6.svg'
-import d10 from './d10.svg'
-
+import r10 from './r10.svg';
+import r11 from './r11.svg';
+import r12 from './r12.svg';
+import r13 from './r13.svg';
+import r14 from './r14.svg';
+import txt from './txt.svg';
+import line from './line.svg';
+import lin from './lin.svg';
 import './App.css';
+import React, { useEffect } from 'react';
 export default App;
 
 
 
 function App() {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      document.documentElement.style.setProperty('--x', `${e.clientX}px`);
+      document.documentElement.style.setProperty('--y', `${e.clientY}px`);
+    };
+
+    document.querySelector('.backg').addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.querySelector('.backg').removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
-        <div className='div1'>
-        <img src={logo} className="App-logo" alt="logo" />
-        <button className='dR4'> <img src={d4} className="d4" alt="d4"/> </button>
-        <button className='dR3'> <img src={d4} className="d3" alt="d2"/> </button>
-        <button className='dR2'> <img src={d5} className="d2" alt="d3"/> </button>
-        </div>
-        <div className='divider'><img src={d6} className="d6" alt="d6"/> </div>
-        <img src={d10} className="d10" alt="d10"/>
-        <div className='splash'></div>
-
-        <p>
-          <code>Bienvenue</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 
-        </a>
+        <img src={logo} className="logo" alt="logo" />
+        <div className='backg'><img src={r10} className="back" alt="back"></img></div>
+        <img src={txt} className="txt" alt="txt"/>
+        
       </header>
+        
+      <button className='btn'> <img src={r14}/></button>
+      <button className='Button1'> <img src={r11}/></button>
+      <button className='Button2'> <img src={r12}/></button>
+      <img src={line} className="line" alt="line"/>
+      <img src={lin} className="lin" alt="lin"/>
+      <footer className="backb" alt="backb"><img src={r13} className="backbb" alt="backbb"/></footer>
     </div>
   );
 }
