@@ -5,7 +5,7 @@ Using ReactJS i made an example website to use it later for other stuff, you're 
 ## Progress? 🍫
 
 ### FrontEnd 🐥
-![50%](https://progress-bar.xyz/50)
+![25%](https://progress-bar.xyz/50)
 
 ### BackEnd 🔙
 
