@@ -7,14 +7,18 @@ import r14 from './r14.svg';
 import txt from './txt.svg';
 import line from './line.svg';
 import lin from './lin.svg';
+import bouton from './Bouton.svg';
+import bouton1 from './Bouton-1.svg';
+import animbo from './animbo.svg';
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect,useRef, useState} from 'react';
 export default App;
 
 
 
 function App() {
-  useEffect(() => {
+
+    useEffect(() => {
     const handleMouseMove = (e) => {
       document.documentElement.style.setProperty('--x', `${e.clientX}px`);
       document.documentElement.style.setProperty('--y', `${e.clientY}px`);
@@ -32,6 +36,8 @@ function App() {
         <img src={logo} className="logo" alt="logo" />
         <div className='backg'><img src={r10} className="back" alt="back"></img></div>
         <img src={txt} className="txt" alt="txt"/>
+        <button className='bouton'><img src={bouton} className='bouton'></img><img className='animbo' src={animbo}></img></button>
+        <button className='bouton1'><div class="animboo-container"><img src={bouton1} className='bouton1'></img><img src={animbo} className='animboo'></img><div class="clickable-top"></div></div></button>
         
       </header>
         
