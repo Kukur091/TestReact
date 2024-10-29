@@ -1,13 +1,13 @@
-# Web
+# Web 👋
 
 Using ReactJS i made an example website to use it later for other stuff, you're free to use it
 
-## Progress?
+## Progress? 🍫
 
-### FrontEnd
+### FrontEnd 🐥
 ![50%](https://progress-bar.xyz/50)
 
-### BackEnd
+### BackEnd 🔙
 
 ![0%](https://progress-bar.xyz/0)
 
